@@ -1,4 +1,4 @@
 var profileContent = document.createElement('div'); 
  
-profileContent.innerHTML = 'url-to-gitpage-html-file'; 
+profileContent.innerHTML = 'https://chaostheory9.github.io/ct9-roleplace-profiles/profile.html'; 
 document.getElementsByTagName('body')[0].appendChild(profileContent); 
