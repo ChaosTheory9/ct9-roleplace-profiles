@@ -1,52 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>RolePlace - My Character</title>
-  <link rel="stylesheet" type="text/css" href="https://chaostheory9.github.io/ct9-roleplace-profiles/styles.css">
-  <link rel="stylesheet" type="text/css" href="https://chaostheory9.github.io/ct9-roleplace-profiles/tabPanelsStyles.css">
-  <style>
-  <!----------- PASTE YOUR CSS BETWEEN THESE LINES ----------->
-    #body {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    }
-  <!----------- PASTE YOUR CSS BETWEEN THESE LINES ----------->
-  </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://chaostheory9.github.io/ct9-roleplace-profiles/script.js"></script>
-  <script>
-    fetch("https://chaostheory9.github.io/ct9-roleplace-profiles/profile-content.html").then(res => {
-      return res.text();
-    }).then( html => {
-      $('#body').html(html);
-    });
-  </script>
-</head>
-
-<body>
-  <!----------- PASTE YOUR HTML BETWEEN THESE LINES ----------->
-  <div id="body"></div>
-  <!----------- PASTE YOUR HTML BETWEEN THESE LINES ----------->
+<link rel="stylesheet" type="text/css" href="https://chaostheory9.github.io/ct9-roleplace-profiles/styles.css">
+<link rel="stylesheet" type="text/css" href="https://chaostheory9.github.io/ct9-roleplace-profiles/tabPanelsStyles.css">
+<style>
+<!----------- PASTE YOUR CSS BETWEEN THESE LINES ----------->
+  #body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+<!----------- PASTE YOUR CSS BETWEEN THESE LINES ----------->
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://chaostheory9.github.io/ct9-roleplace-profiles/tabPanelsScript.js"></script>
+<script src="https://chaostheory9.github.io/ct9-roleplace-profiles/script.js"></script>
+<script>
+  fetch("https://chaostheory9.github.io/ct9-roleplace-profiles/profile-content.html").then(res => {
+    return res.text();
+  }).then( html => {
+    $('#body').html(html);
+  });
+</script>
+<!----------- PASTE YOUR HTML BETWEEN THESE LINES ----------->
+<div id="body"></div>
+<!----------- PASTE YOUR HTML BETWEEN THESE LINES ----------->
   
-  <!--
-  <h1 class="title">Tabs</h1>
-  <div class="tabContainer">
-    <div class="buttonContainer">
-        <button onclick="showPanel(0,'#f44336')">Tab 1</button>
-        <button onclick="showPanel(1,'#4caf50')">Tab 2</button>
-        <button onclick="showPanel(2,'#2196f3')">Tab 3</button>
-        <button onclick="showPanel(3,'#ff5722')">Tab 4</button>
-    </div>
-    <div class="tabPanel">Tab 1:Content</div>
-    <div class="tabPanel">Tab 2:Content</div>
-    <div class="tabPanel">Tab 3:Content</div>
-    <div class="tabPanel">Tab 4:Content</div>
+<!--
+<h1 class="title">Tabs</h1>
+<div class="tabContainer">
+  <div class="buttonContainer">
+    <button onclick="showPanel(0,'#f44336')">Tab 1</button>
+    <button onclick="showPanel(1,'#4caf50')">Tab 2</button>
+    <button onclick="showPanel(2,'#2196f3')">Tab 3</button>
+    <button onclick="showPanel(3,'#ff5722')">Tab 4</button>
   </div>
-
-  <script src="https://chaostheory9.github.io/ct9-roleplace-profiles/tabPanelsScript.js"></script>
-  -->
-</body>
-</html>
+  <div class="tabPanel">Tab 1:Content</div>
+  <div class="tabPanel">Tab 2:Content</div>
+  <div class="tabPanel">Tab 3:Content</div>
+  <div class="tabPanel">Tab 4:Content</div>
+</div>
+-->
