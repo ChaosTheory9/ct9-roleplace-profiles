@@ -1,6 +1,7 @@
 var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
 var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
-function showPanel(panelIndex, colorCode = '#ffffff') {
+
+export function showPanel(panelIndex, colorCode = '#ffffff', displayType='block') {
     tabButtons.forEach(function(node){
         node.style.backgroundColor="";
         node.style.color="";
@@ -10,9 +11,26 @@ function showPanel(panelIndex, colorCode = '#ffffff') {
     tabPanels.forEach(function(node){
         node.style.display="none";
     });
-    tabPanels[panelIndex].style.display="block";
+    switch (displayType) {
+        case: 'block'
+        case: 'flex'
+        case: 'table'
+        case: 'inline'
+        case: 'inline-block'
+        case: 'inline-flex'
+        case: 'inline-grid'
+        case: 'grid'
+        case: 'list-item'
+            tabPanels[panelIndex].style.display=displayType;
+            break;
+        default:
+            tabPanels[panelIndex].style.display='block';
+    }
+    
+    
     tabPanels[panelIndex].style.backgroundColor=colorCode;
 }
+
 showPanel(0,'#f44336');
 /*
     SAMPLE HTML
